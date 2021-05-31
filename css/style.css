@@ -33,6 +33,30 @@ img {
     ;
 }
 
+@media (max-width: 1200px) {
+    .structure {
+        grid-template-areas:
+            "header header footer"
+            "sidenav content content"
+            "sidenav announcements announcements"
+            "footer footer footer"
+        ;
+    }
+}
+
+@media (max-width: 760px) {
+    .structure {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "header"
+            "sidenav"
+            "content"
+            "announcements"
+            "footer"
+        ;
+    }
+}
+
 /* HEADER */
 
 .header {
